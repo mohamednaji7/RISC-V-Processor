@@ -1,0 +1,910 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
+# do processor_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/processor.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity processor
+# -- Compiling architecture desc of processor
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/ifetch.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity IFetch
+# -- Compiling architecture behavior of IFetch
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/pc_reg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity PC_Reg
+# -- Compiling architecture behavior of PC_Reg
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/inst_memory.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Inst_Memory
+# -- Compiling architecture behavior of Inst_Memory
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/decode.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity Decode
+# -- Compiling architecture desc of Decode
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/regfile.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity regFile
+# -- Compiling architecture behavior of regFile
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/execute.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity EXECUTE
+# -- Compiling architecture desc of EXECUTE
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/alu.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu
+# -- Compiling architecture desc of alu
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/addsub.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity addSub
+# -- Compiling architecture desc of addSub
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/fulladder32bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fullAdder32bit
+# -- Compiling architecture desc of fullAdder32bit
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/fulladder16bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fullAdder16bit
+# -- Compiling architecture desc of fullAdder16bit
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/fulladder8bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fullAdder8bit
+# -- Compiling architecture desc of fullAdder8bit
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/fulladder4bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fullAdder4bit
+# -- Compiling architecture desc of fullAdder4bit
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/fulladder2bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fullAdder2bit
+# -- Compiling architecture desc of fullAdder2bit
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/full_adder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity full_adder
+# -- Compiling architecture desc of full_adder
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/lt32.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity lt32
+# -- Compiling architecture desc of lt32
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/ltu32.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ltu32
+# -- Compiling architecture desc of ltu32
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/cmp1bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cmp1bit
+# -- Compiling architecture desc of cmp1bit
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/sft32.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sft32
+# -- Compiling architecture desc of sft32
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/rotate.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rotate
+# -- Compiling architecture desc of rotate
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/barrelrshift.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity barrelRShift
+# -- Compiling architecture desc of barrelRShift
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/sh32bit_r_16p_sftin.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sh32bit_R_16p_sftIn
+# -- Compiling architecture desc of sh32bit_R_16p_sftIn
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/sh32bit_r_8p_sftin.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sh32bit_R_8p_sftIn
+# -- Compiling architecture desc of sh32bit_R_8p_sftIn
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/sh32bit_r_4p_sftin.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sh32bit_R_4p_sftIn
+# -- Compiling architecture desc of sh32bit_R_4p_sftIn
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/sh32bit_r_2p_sftin.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sh32bit_R_2p_sftIn
+# -- Compiling architecture desc of sh32bit_R_2p_sftIn
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/sh32bit_r_1p_sftin.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sh32bit_R_1p_sftIn
+# -- Compiling architecture desc of sh32bit_R_1p_sftIn
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/pc_add1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity PC_add1
+# -- Compiling architecture desc of PC_add1
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/nextpc_comp.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity nextPC_comp
+# -- Compiling architecture desc of nextPC_comp
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/data_memory.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Data_Memory
+# -- Compiling architecture behavior of Data_Memory
+# 
+vsim work.processor
+# vsim work.processor 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.processor(desc)
+# Loading work.ifetch(behavior)
+# Loading work.pc_reg(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.inst_memory(behavior)
+# Loading ieee.std_logic_arith(body)
+# Loading work.decode(desc)
+# Loading work.regfile(behavior)
+# Loading work.execute(desc)
+# Loading work.alu(desc)
+# Loading work.addsub(desc)
+# Loading work.fulladder32bit(desc)
+# Loading work.fulladder16bit(desc)
+# Loading work.fulladder8bit(desc)
+# Loading work.fulladder4bit(desc)
+# Loading work.fulladder2bit(desc)
+# Loading work.full_adder(desc)
+# Loading work.lt32(desc)
+# Loading work.ltu32(desc)
+# Loading work.cmp1bit(desc)
+# Loading work.sft32(desc)
+# Loading work.rotate(desc)
+# Loading work.barrelrshift(desc)
+# Loading work.sh32bit_r_16p_sftin(desc)
+# Loading work.sh32bit_r_8p_sftin(desc)
+# Loading work.sh32bit_r_4p_sftin(desc)
+# Loading work.sh32bit_r_2p_sftin(desc)
+# Loading work.sh32bit_r_1p_sftin(desc)
+# Loading work.pc_add1(desc)
+# Loading work.nextpc_comp(desc)
+# Loading work.data_memory(behavior)
+add wave -position insertpoint  \
+sim:/processor/clk \
+sim:/processor/Pulse_Me_to_Fly
+force -freeze sim:/processor/Pulse_Me_to_Fly {1} 0
+# ** Error: (vsim-4026) Value "1" does not represent a literal of the enumeration type.
+# ** Error: (vsim-4011) Invalid force value: {1} 0.
+# 
+# Can't move the Now cursor.
+force -freeze sim:/processor/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/processor/Pulse_Me_to_Fly {1} 0
+# ** Error: (vsim-4026) Value "1" does not represent a literal of the enumeration type.
+# ** Error: (vsim-4011) Invalid force value: {1} 0.
+# 
+force -freeze sim:/processor/Pulse_Me_to_Fly {1} 0
+force -freeze sim:/processor/clk 1 0, 0 {50 ps} -r 100
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/wiringDATAMEMORY
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/wiringRFILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/wiringRFILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/wiringRFILE
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/wiringDEC
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/wiringDEC
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/wiringDEC
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/wiringIF/wiring2
+do processor_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/processor.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity processor
+# -- Compiling architecture desc of processor
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/ifetch.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity IFetch
+# -- Compiling architecture behavior of IFetch
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/pc_reg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity PC_Reg
+# -- Compiling architecture behavior of PC_Reg
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/inst_memory.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Inst_Memory
+# -- Compiling architecture behavior of Inst_Memory
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/decode.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity Decode
+# -- Compiling architecture desc of Decode
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/regfile.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity regFile
+# -- Compiling architecture behavior of regFile
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/execute.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity EXECUTE
+# -- Compiling architecture desc of EXECUTE
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/alu.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu
+# -- Compiling architecture desc of alu
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/addsub.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity addSub
+# -- Compiling architecture desc of addSub
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/fulladder32bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fullAdder32bit
+# -- Compiling architecture desc of fullAdder32bit
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/fulladder16bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fullAdder16bit
+# -- Compiling architecture desc of fullAdder16bit
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/fulladder8bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fullAdder8bit
+# -- Compiling architecture desc of fullAdder8bit
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/fulladder4bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fullAdder4bit
+# -- Compiling architecture desc of fullAdder4bit
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/fulladder2bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fullAdder2bit
+# -- Compiling architecture desc of fullAdder2bit
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/full_adder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity full_adder
+# -- Compiling architecture desc of full_adder
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/lt32.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity lt32
+# -- Compiling architecture desc of lt32
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/ltu32.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ltu32
+# -- Compiling architecture desc of ltu32
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/cmp1bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cmp1bit
+# -- Compiling architecture desc of cmp1bit
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/sft32.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sft32
+# -- Compiling architecture desc of sft32
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/rotate.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rotate
+# -- Compiling architecture desc of rotate
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/barrelrshift.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity barrelRShift
+# -- Compiling architecture desc of barrelRShift
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/sh32bit_r_16p_sftin.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sh32bit_R_16p_sftIn
+# -- Compiling architecture desc of sh32bit_R_16p_sftIn
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/sh32bit_r_8p_sftin.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sh32bit_R_8p_sftIn
+# -- Compiling architecture desc of sh32bit_R_8p_sftIn
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/sh32bit_r_4p_sftin.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sh32bit_R_4p_sftIn
+# -- Compiling architecture desc of sh32bit_R_4p_sftIn
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/sh32bit_r_2p_sftin.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sh32bit_R_2p_sftIn
+# -- Compiling architecture desc of sh32bit_R_2p_sftIn
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/sh32bit_r_1p_sftin.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sh32bit_R_1p_sftIn
+# -- Compiling architecture desc of sh32bit_R_1p_sftIn
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/pc_add1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity PC_add1
+# -- Compiling architecture desc of PC_add1
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/nextpc_comp.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity nextPC_comp
+# -- Compiling architecture desc of nextPC_comp
+# vcom -93 -work work {C:/altera/13.1/_processor/processor/data_memory.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Data_Memory
+# -- Compiling architecture behavior of Data_Memory
+# 
+vsim work.processor
+# vsim work.processor 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.processor(desc)
+# Loading work.ifetch(behavior)
+# Loading work.pc_reg(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.inst_memory(behavior)
+# Loading ieee.std_logic_arith(body)
+# Loading work.decode(desc)
+# Loading work.regfile(behavior)
+# Loading work.execute(desc)
+# Loading work.alu(desc)
+# Loading work.addsub(desc)
+# Loading work.fulladder32bit(desc)
+# Loading work.fulladder16bit(desc)
+# Loading work.fulladder8bit(desc)
+# Loading work.fulladder4bit(desc)
+# Loading work.fulladder2bit(desc)
+# Loading work.full_adder(desc)
+# Loading work.lt32(desc)
+# Loading work.ltu32(desc)
+# Loading work.cmp1bit(desc)
+# Loading work.sft32(desc)
+# Loading work.rotate(desc)
+# Loading work.barrelrshift(desc)
+# Loading work.sh32bit_r_16p_sftin(desc)
+# Loading work.sh32bit_r_8p_sftin(desc)
+# Loading work.sh32bit_r_4p_sftin(desc)
+# Loading work.sh32bit_r_2p_sftin(desc)
+# Loading work.sh32bit_r_1p_sftin(desc)
+# Loading work.pc_add1(desc)
+# Loading work.nextpc_comp(desc)
+# Loading work.data_memory(behavior)
+# WARNING: No extended dataflow license exists
+vsim work.processor
+# vsim work.processor 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.processor(desc)
+# Loading work.ifetch(behavior)
+# Loading work.pc_reg(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.inst_memory(behavior)
+# Loading ieee.std_logic_arith(body)
+# Loading work.decode(desc)
+# Loading work.regfile(behavior)
+# Loading work.execute(desc)
+# Loading work.alu(desc)
+# Loading work.addsub(desc)
+# Loading work.fulladder32bit(desc)
+# Loading work.fulladder16bit(desc)
+# Loading work.fulladder8bit(desc)
+# Loading work.fulladder4bit(desc)
+# Loading work.fulladder2bit(desc)
+# Loading work.full_adder(desc)
+# Loading work.lt32(desc)
+# Loading work.ltu32(desc)
+# Loading work.cmp1bit(desc)
+# Loading work.sft32(desc)
+# Loading work.rotate(desc)
+# Loading work.barrelrshift(desc)
+# Loading work.sh32bit_r_16p_sftin(desc)
+# Loading work.sh32bit_r_8p_sftin(desc)
+# Loading work.sh32bit_r_4p_sftin(desc)
+# Loading work.sh32bit_r_2p_sftin(desc)
+# Loading work.sh32bit_r_1p_sftin(desc)
+# Loading work.pc_add1(desc)
+# Loading work.nextpc_comp(desc)
+# Loading work.data_memory(behavior)
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/processor/wiringRFILE/RegFileInst(0)
+add wave -position insertpoint  \
+sim:/processor/clk \
+sim:/processor/Pulse_Me_to_Fly
+force -freeze sim:/processor/Pulse_Me_to_Fly {} 0
+# ** Error: (vsim-4026) Value "" does not represent a literal of the enumeration type.
+# ** Error: (vsim-4011) Invalid force value: {} 0.
+# 
+force -freeze sim:/processor/Pulse_Me_to_Fly {1} 0
+force -freeze {sim:/processor/clk} 1 0, 0 {50 ps} -r 100
+# ** Error: (vish-4008) Object 'sim:/processor/clk' not found.
+# 
+force -freeze sim:/processor/clk 1 {0,} 0 {50 ps} -r 100
+# Invalid time value: 0, 0
+force -freeze sim:/processor/clk 1 0, 0 {50 ps} -r {100}
+# Invalid time value: 100
+# ** Error: (vish-4004) The -repeat option requires a time period argument.
+# Usage: force [-freeze | -drive | -deposit] [-cancel <time>] [-repeat <time>] <object_name> {<value> [[@]<time>[<unit>]]}...
+force -freeze sim:/processor/clk 1 0, 0 {50 ps} -r {100}
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/wiringDATAMEMORY
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/wiringRFILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/wiringRFILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/wiringRFILE
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/wiringDEC
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/wiringDEC
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/wiringDEC
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /processor/wiringIF/wiring2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 7  Instance: /processor/wiringDATAMEMORY
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 8  Instance: /processor/wiringDATAMEMORY
+noforce sim:/processor/Pulse_Me_to_Fly
+run
+run
+run
+run
+run
+add wave -position insertpoint  \
+sim:/processor/wiringRFILE/RegFileInst(1)
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/processor/clk 1 0, 0 {25 ps} -r {50}
+# Invalid time value: 50
+# ** Error: (vish-4004) The -repeat option requires a time period argument.
+# Usage: force [-freeze | -drive | -deposit] [-cancel <time>] [-repeat <time>] <object_name> {<value> [[@]<time>[<unit>]]}...
+force -freeze sim:/processor/clk 1 0, 0 {25 ps} -r {50}
+run
+run
+force -freeze sim:/processor/clk 1 0, 0 {0 ps} -r 1
+run
+run
+force -freeze sim:/processor/clk 1 0, 0 {25 ps} -r {50}
+force -freeze sim:/processor/clk 1 0, 0 {1 ps} -r {2}
+run
+force -freeze sim:/processor/clk 1 0, 0 {0.2 ps} -r {1}
+# (vsim-168) The time value, 0.2 ps, is smaller than the simulator resolution so it has been truncated to 0.
+force -freeze sim:/processor/clk 1 0, 0 {0.5 ps} -r {1}
+# (vsim-168) The time value, 0.5 ps, is smaller than the simulator resolution so it has been truncated to 0.
+force -freeze sim:/processor/clk 1 0, 0 {0 ps} -r {1}
+run
+force -freeze sim:/processor/clk 1 0, 0 {1 ps} -r {2}
+run
+run
+run
+run
+# ** Fatal: (vsim-3421) Value 256 for Add_INT is out of range 0 to 255.
+#    Time: 2772 ps  Iteration: 1  Process: /processor/wiringIF/wiring2/line__36 File: C:/altera/13.1/_processor/processor/inst_memory.vhd
+# Fatal error in Architecture behavior at C:/altera/13.1/_processor/processor/inst_memory.vhd line 36
+# 
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/altera/13.1/_processor/processor/inst_memory.vhd 36 Architecture behavior
+# 

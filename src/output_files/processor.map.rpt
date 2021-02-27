@@ -1,0 +1,530 @@
+Analysis & Synthesis report for processor
+Sat Feb 27 08:39:56 2021
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: IFetch:wiringIF|Inst_Memory:wiring2
+ 10. Parameter Settings for User Entity Instance: regFile:wiringRFILE
+ 11. Parameter Settings for User Entity Instance: Data_Memory:wiringDATAMEMORY
+ 12. Port Connectivity Checks: "EXECUTE:wiringEXE|nextPC_comp:wiring_THE_nPC|fullAdder32bit:wiringB"
+ 13. Port Connectivity Checks: "EXECUTE:wiringEXE|alu:WIRING_THE_ALU|lt32:set_a_less_b|ltu32:wiring|cmp1bit:bits00"
+ 14. Port Connectivity Checks: "EXECUTE:wiringEXE|alu:WIRING_THE_ALU|lt32:set_a_less_b|ltu32:wiring|cmp1bit:bits31"
+ 15. Port Connectivity Checks: "EXECUTE:wiringEXE|alu:WIRING_THE_ALU|addSub:Adding_Subing|fullAdder32bit:wiring|fullAdder16bit:bit16to31"
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sat Feb 27 08:39:56 2021      ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                      ; processor                                  ;
+; Top-level Entity Name              ; processor                                  ;
+; Family                             ; Cyclone IV GX                              ;
+; Total logic elements               ; 0                                          ;
+;     Total combinational functions  ; 0                                          ;
+;     Dedicated logic registers      ; 0                                          ;
+; Total registers                    ; 0                                          ;
+; Total pins                         ; 2                                          ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total GXB Receiver Channel PCS     ; 0                                          ;
+; Total GXB Receiver Channel PMA     ; 0                                          ;
+; Total GXB Transmitter Channel PCS  ; 0                                          ;
+; Total GXB Transmitter Channel PMA  ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                      ; processor          ; processor          ;
+; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                             ;
++----------------------------------+-----------------+-----------------------+-------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                ; Library ;
++----------------------------------+-----------------+-----------------------+-------------------------------------------------------------+---------+
+; processor.vhd                    ; yes             ; User VHDL File        ; C:/altera/13.1/_processor/processor/processor.vhd           ;         ;
+; ifetch.vhd                       ; yes             ; Auto-Found VHDL File  ; C:/altera/13.1/_processor/processor/ifetch.vhd              ;         ;
+; pc_reg.vhd                       ; yes             ; Auto-Found VHDL File  ; C:/altera/13.1/_processor/processor/pc_reg.vhd              ;         ;
+; inst_memory.vhd                  ; yes             ; Auto-Found VHDL File  ; C:/altera/13.1/_processor/processor/inst_memory.vhd         ;         ;
+; decode.vhd                       ; yes             ; Auto-Found VHDL File  ; C:/altera/13.1/_processor/processor/decode.vhd              ;         ;
+; regfile.vhd                      ; yes             ; Auto-Found VHDL File  ; C:/altera/13.1/_processor/processor/regfile.vhd             ;         ;
+; execute.vhd                      ; yes             ; Auto-Found VHDL File  ; C:/altera/13.1/_processor/processor/execute.vhd             ;         ;
+; alu.vhd                          ; yes             ; Auto-Found VHDL File  ; C:/altera/13.1/_processor/processor/alu.vhd                 ;         ;
+; addsub.vhd                       ; yes             ; Auto-Found VHDL File  ; C:/altera/13.1/_processor/processor/addsub.vhd              ;         ;
+; fulladder32bit.vhd               ; yes             ; Auto-Found VHDL File  ; C:/altera/13.1/_processor/processor/fulladder32bit.vhd      ;         ;
+; fulladder16bit.vhd               ; yes             ; Auto-Found VHDL File  ; C:/altera/13.1/_processor/processor/fulladder16bit.vhd      ;         ;
+; fulladder8bit.vhd                ; yes             ; Auto-Found VHDL File  ; C:/altera/13.1/_processor/processor/fulladder8bit.vhd       ;         ;
+; fulladder4bit.vhd                ; yes             ; Auto-Found VHDL File  ; C:/altera/13.1/_processor/processor/fulladder4bit.vhd       ;         ;
+; fulladder2bit.vhd                ; yes             ; Auto-Found VHDL File  ; C:/altera/13.1/_processor/processor/fulladder2bit.vhd       ;         ;
+; full_adder.vhd                   ; yes             ; Auto-Found VHDL File  ; C:/altera/13.1/_processor/processor/full_adder.vhd          ;         ;
+; lt32.vhd                         ; yes             ; Auto-Found VHDL File  ; C:/altera/13.1/_processor/processor/lt32.vhd                ;         ;
+; ltu32.vhd                        ; yes             ; Auto-Found VHDL File  ; C:/altera/13.1/_processor/processor/ltu32.vhd               ;         ;
+; cmp1bit.vhd                      ; yes             ; Auto-Found VHDL File  ; C:/altera/13.1/_processor/processor/cmp1bit.vhd             ;         ;
+; sft32.vhd                        ; yes             ; Auto-Found VHDL File  ; C:/altera/13.1/_processor/processor/sft32.vhd               ;         ;
+; rotate.vhd                       ; yes             ; Auto-Found VHDL File  ; C:/altera/13.1/_processor/processor/rotate.vhd              ;         ;
+; barrelrshift.vhd                 ; yes             ; Auto-Found VHDL File  ; C:/altera/13.1/_processor/processor/barrelrshift.vhd        ;         ;
+; sh32bit_r_16p_sftin.vhd          ; yes             ; Auto-Found VHDL File  ; C:/altera/13.1/_processor/processor/sh32bit_r_16p_sftin.vhd ;         ;
+; sh32bit_r_8p_sftin.vhd           ; yes             ; Auto-Found VHDL File  ; C:/altera/13.1/_processor/processor/sh32bit_r_8p_sftin.vhd  ;         ;
+; sh32bit_r_4p_sftin.vhd           ; yes             ; Auto-Found VHDL File  ; C:/altera/13.1/_processor/processor/sh32bit_r_4p_sftin.vhd  ;         ;
+; sh32bit_r_2p_sftin.vhd           ; yes             ; Auto-Found VHDL File  ; C:/altera/13.1/_processor/processor/sh32bit_r_2p_sftin.vhd  ;         ;
+; sh32bit_r_1p_sftin.vhd           ; yes             ; Auto-Found VHDL File  ; C:/altera/13.1/_processor/processor/sh32bit_r_1p_sftin.vhd  ;         ;
+; pc_add1.vhd                      ; yes             ; Auto-Found VHDL File  ; C:/altera/13.1/_processor/processor/pc_add1.vhd             ;         ;
+; nextpc_comp.vhd                  ; yes             ; Auto-Found VHDL File  ; C:/altera/13.1/_processor/processor/nextpc_comp.vhd         ;         ;
+; data_memory.vhd                  ; yes             ; Auto-Found VHDL File  ; C:/altera/13.1/_processor/processor/data_memory.vhd         ;         ;
++----------------------------------+-----------------+-----------------------+-------------------------------------------------------------+---------+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++--------------------------+------------------+
+; Resource                 ; Usage            ;
++--------------------------+------------------+
+; I/O pins                 ; 2                ;
+; DSP block 9-bit elements ; 0                ;
+; Maximum fan-out node     ; Pulse_Me_to_Fly  ;
+; Maximum fan-out          ; 1                ;
+; Total fan-out            ; 2                ;
+; Average fan-out          ; 0.50             ;
++--------------------------+------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                     ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
+; |processor                 ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 2    ; 0            ; |processor          ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: IFetch:wiringIF|Inst_Memory:wiring2 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; ram_width      ; 32    ; Signed Integer                                          ;
+; ram_depth      ; 256   ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regFile:wiringRFILE ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; file_len_bits  ; 5     ; Signed Integer                          ;
+; file_len       ; 32    ; Signed Integer                          ;
+; file_width     ; 32    ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Data_Memory:wiringDATAMEMORY ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; ram_width      ; 32    ; Signed Integer                                   ;
+; ram_depth      ; 256   ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "EXECUTE:wiringEXE|nextPC_comp:wiring_THE_nPC|fullAdder32bit:wiringB" ;
++------+-------+----------+-----------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                               ;
++------+-------+----------+-----------------------------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                                                          ;
++------+-------+----------+-----------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "EXECUTE:wiringEXE|alu:WIRING_THE_ALU|lt32:set_a_less_b|ltu32:wiring|cmp1bit:bits00" ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; eqi  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "EXECUTE:wiringEXE|alu:WIRING_THE_ALU|lt32:set_a_less_b|ltu32:wiring|cmp1bit:bits31" ;
++-------+-------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                             ;
++-------+-------+----------+-------------------------------------------------------------------------------------+
+; eqip1 ; Input ; Info     ; Stuck at VCC                                                                        ;
+; ltip1 ; Input ; Info     ; Stuck at GND                                                                        ;
++-------+-------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "EXECUTE:wiringEXE|alu:WIRING_THE_ALU|addSub:Adding_Subing|fullAdder32bit:wiring|fullAdder16bit:bit16to31" ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                   ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                       ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Sat Feb 27 08:39:53 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processor -c processor
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file processor.vhd
+    Info (12022): Found design unit 1: processor-desc
+    Info (12023): Found entity 1: processor
+Info (12127): Elaborating entity "processor" for the top level hierarchy
+Warning (12125): Using design file ifetch.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: IFetch-behavior
+    Info (12023): Found entity 1: IFetch
+Info (12128): Elaborating entity "IFetch" for hierarchy "IFetch:wiringIF"
+Warning (12125): Using design file pc_reg.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: PC_Reg-behavior
+    Info (12023): Found entity 1: PC_Reg
+Info (12128): Elaborating entity "PC_Reg" for hierarchy "IFetch:wiringIF|PC_Reg:wiring"
+Warning (12125): Using design file inst_memory.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: Inst_Memory-behavior
+    Info (12023): Found entity 1: Inst_Memory
+Info (12128): Elaborating entity "Inst_Memory" for hierarchy "IFetch:wiringIF|Inst_Memory:wiring2"
+Warning (12125): Using design file decode.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: Decode-desc
+    Info (12023): Found entity 1: Decode
+Info (12128): Elaborating entity "Decode" for hierarchy "Decode:wiringDEC"
+Warning (10036): Verilog HDL or VHDL warning at decode.vhd(39): object "funct7" assigned a value but never read
+Warning (12125): Using design file regfile.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: regFile-behavior
+    Info (12023): Found entity 1: regFile
+Info (12128): Elaborating entity "regFile" for hierarchy "regFile:wiringRFILE"
+Warning (12125): Using design file execute.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: EXECUTE-desc
+    Info (12023): Found entity 1: EXECUTE
+Info (12128): Elaborating entity "EXECUTE" for hierarchy "EXECUTE:wiringEXE"
+Info (10041): Inferred latch for "A[0]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[1]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[2]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[3]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[4]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[5]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[6]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[7]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[8]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[9]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[10]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[11]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[12]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[13]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[14]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[15]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[16]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[17]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[18]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[19]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[20]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[21]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[22]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[23]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[24]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[25]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[26]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[27]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[28]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[29]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[30]" at execute.vhd(96)
+Info (10041): Inferred latch for "A[31]" at execute.vhd(96)
+Warning (12125): Using design file alu.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: alu-desc
+    Info (12023): Found entity 1: alu
+Info (12128): Elaborating entity "alu" for hierarchy "EXECUTE:wiringEXE|alu:WIRING_THE_ALU"
+Info (10041): Inferred latch for "output[0]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[1]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[2]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[3]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[4]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[5]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[6]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[7]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[8]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[9]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[10]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[11]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[12]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[13]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[14]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[15]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[16]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[17]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[18]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[19]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[20]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[21]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[22]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[23]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[24]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[25]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[26]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[27]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[28]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[29]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[30]" at alu.vhd(110)
+Info (10041): Inferred latch for "output[31]" at alu.vhd(110)
+Warning (12125): Using design file addsub.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: addSub-desc
+    Info (12023): Found entity 1: addSub
+Info (12128): Elaborating entity "addSub" for hierarchy "EXECUTE:wiringEXE|alu:WIRING_THE_ALU|addSub:Adding_Subing"
+Warning (12125): Using design file fulladder32bit.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: fullAdder32bit-desc
+    Info (12023): Found entity 1: fullAdder32bit
+Info (12128): Elaborating entity "fullAdder32bit" for hierarchy "EXECUTE:wiringEXE|alu:WIRING_THE_ALU|addSub:Adding_Subing|fullAdder32bit:wiring"
+Warning (10036): Verilog HDL or VHDL warning at fulladder32bit.vhd(14): object "dummy" assigned a value but never read
+Warning (12125): Using design file fulladder16bit.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: fullAdder16bit-desc
+    Info (12023): Found entity 1: fullAdder16bit
+Info (12128): Elaborating entity "fullAdder16bit" for hierarchy "EXECUTE:wiringEXE|alu:WIRING_THE_ALU|addSub:Adding_Subing|fullAdder32bit:wiring|fullAdder16bit:bit0toF"
+Warning (12125): Using design file fulladder8bit.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: fullAdder8bit-desc
+    Info (12023): Found entity 1: fullAdder8bit
+Info (12128): Elaborating entity "fullAdder8bit" for hierarchy "EXECUTE:wiringEXE|alu:WIRING_THE_ALU|addSub:Adding_Subing|fullAdder32bit:wiring|fullAdder16bit:bit0toF|fullAdder8bit:bit0to7"
+Warning (12125): Using design file fulladder4bit.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: fullAdder4bit-desc
+    Info (12023): Found entity 1: fullAdder4bit
+Info (12128): Elaborating entity "fullAdder4bit" for hierarchy "EXECUTE:wiringEXE|alu:WIRING_THE_ALU|addSub:Adding_Subing|fullAdder32bit:wiring|fullAdder16bit:bit0toF|fullAdder8bit:bit0to7|fullAdder4bit:bit0123"
+Warning (12125): Using design file fulladder2bit.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: fullAdder2bit-desc
+    Info (12023): Found entity 1: fullAdder2bit
+Info (12128): Elaborating entity "fullAdder2bit" for hierarchy "EXECUTE:wiringEXE|alu:WIRING_THE_ALU|addSub:Adding_Subing|fullAdder32bit:wiring|fullAdder16bit:bit0toF|fullAdder8bit:bit0to7|fullAdder4bit:bit0123|fullAdder2bit:bit01"
+Warning (12125): Using design file full_adder.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: full_adder-desc
+    Info (12023): Found entity 1: full_adder
+Info (12128): Elaborating entity "full_adder" for hierarchy "EXECUTE:wiringEXE|alu:WIRING_THE_ALU|addSub:Adding_Subing|fullAdder32bit:wiring|fullAdder16bit:bit0toF|fullAdder8bit:bit0to7|fullAdder4bit:bit0123|fullAdder2bit:bit01|full_adder:bit0"
+Warning (12125): Using design file lt32.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: lt32-desc
+    Info (12023): Found entity 1: lt32
+Info (12128): Elaborating entity "lt32" for hierarchy "EXECUTE:wiringEXE|alu:WIRING_THE_ALU|lt32:set_a_less_b"
+Warning (12125): Using design file ltu32.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: ltu32-desc
+    Info (12023): Found entity 1: ltu32
+Info (12128): Elaborating entity "ltu32" for hierarchy "EXECUTE:wiringEXE|alu:WIRING_THE_ALU|lt32:set_a_less_b|ltu32:wiring"
+Warning (12125): Using design file cmp1bit.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: cmp1bit-desc
+    Info (12023): Found entity 1: cmp1bit
+Info (12128): Elaborating entity "cmp1bit" for hierarchy "EXECUTE:wiringEXE|alu:WIRING_THE_ALU|lt32:set_a_less_b|ltu32:wiring|cmp1bit:bits31"
+Warning (12125): Using design file sft32.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: sft32-desc
+    Info (12023): Found entity 1: sft32
+Info (12128): Elaborating entity "sft32" for hierarchy "EXECUTE:wiringEXE|alu:WIRING_THE_ALU|sft32:Shifting"
+Warning (12125): Using design file rotate.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: rotate-desc
+    Info (12023): Found entity 1: rotate
+Info (12128): Elaborating entity "rotate" for hierarchy "EXECUTE:wiringEXE|alu:WIRING_THE_ALU|sft32:Shifting|rotate:rotateX"
+Warning (12125): Using design file barrelrshift.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: barrelRShift-desc
+    Info (12023): Found entity 1: barrelRShift
+Info (12128): Elaborating entity "barrelRShift" for hierarchy "EXECUTE:wiringEXE|alu:WIRING_THE_ALU|sft32:Shifting|barrelRShift:shifting"
+Warning (12125): Using design file sh32bit_r_16p_sftin.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: sh32bit_R_16p_sftIn-desc
+    Info (12023): Found entity 1: sh32bit_R_16p_sftIn
+Info (12128): Elaborating entity "sh32bit_R_16p_sftIn" for hierarchy "EXECUTE:wiringEXE|alu:WIRING_THE_ALU|sft32:Shifting|barrelRShift:shifting|sh32bit_R_16p_sftIn:shift16p"
+Warning (12125): Using design file sh32bit_r_8p_sftin.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: sh32bit_R_8p_sftIn-desc
+    Info (12023): Found entity 1: sh32bit_R_8p_sftIn
+Info (12128): Elaborating entity "sh32bit_R_8p_sftIn" for hierarchy "EXECUTE:wiringEXE|alu:WIRING_THE_ALU|sft32:Shifting|barrelRShift:shifting|sh32bit_R_8p_sftIn:shift8p"
+Warning (12125): Using design file sh32bit_r_4p_sftin.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: sh32bit_R_4p_sftIn-desc
+    Info (12023): Found entity 1: sh32bit_R_4p_sftIn
+Info (12128): Elaborating entity "sh32bit_R_4p_sftIn" for hierarchy "EXECUTE:wiringEXE|alu:WIRING_THE_ALU|sft32:Shifting|barrelRShift:shifting|sh32bit_R_4p_sftIn:shift4p"
+Warning (12125): Using design file sh32bit_r_2p_sftin.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: sh32bit_R_2p_sftIn-desc
+    Info (12023): Found entity 1: sh32bit_R_2p_sftIn
+Info (12128): Elaborating entity "sh32bit_R_2p_sftIn" for hierarchy "EXECUTE:wiringEXE|alu:WIRING_THE_ALU|sft32:Shifting|barrelRShift:shifting|sh32bit_R_2p_sftIn:shift2p"
+Warning (12125): Using design file sh32bit_r_1p_sftin.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: sh32bit_R_1p_sftIn-desc
+    Info (12023): Found entity 1: sh32bit_R_1p_sftIn
+Info (12128): Elaborating entity "sh32bit_R_1p_sftIn" for hierarchy "EXECUTE:wiringEXE|alu:WIRING_THE_ALU|sft32:Shifting|barrelRShift:shifting|sh32bit_R_1p_sftIn:shift1p"
+Warning (12125): Using design file pc_add1.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: PC_add1-desc
+    Info (12023): Found entity 1: PC_add1
+Info (12128): Elaborating entity "PC_add1" for hierarchy "EXECUTE:wiringEXE|PC_add1:PCADDING_1"
+Warning (12125): Using design file nextpc_comp.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: nextPC_comp-desc
+    Info (12023): Found entity 1: nextPC_comp
+Info (12128): Elaborating entity "nextPC_comp" for hierarchy "EXECUTE:wiringEXE|nextPC_comp:wiring_THE_nPC"
+Warning (12125): Using design file data_memory.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: Data_Memory-behavior
+    Info (12023): Found entity 1: Data_Memory
+Info (12128): Elaborating entity "Data_Memory" for hierarchy "Data_Memory:wiringDATAMEMORY"
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "Pulse_Me_to_Fly"
+    Warning (15610): No output dependent on input pin "clk"
+Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 34 warnings
+    Info: Peak virtual memory: 4723 megabytes
+    Info: Processing ended: Sat Feb 27 08:39:56 2021
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
+
+
