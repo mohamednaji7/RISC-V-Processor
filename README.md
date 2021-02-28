@@ -20,3 +20,7 @@
     Adding the BrALU and support the B-Type Instructions  
     Piplining the processor with Hazards Solutions  
     SRAM/DRAM as cache and Handling cache Misses 
+### Addtionl Functionality
+    -function to read machine code from txt file and fill the memory with the bits
+    -also one for the data memory
+    -some .txt files contain the 0's and 1's
