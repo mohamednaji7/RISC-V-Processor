@@ -1,6 +1,6 @@
 # RISC-V-Processor
-This is a single cycle RISC-V Processor in VHDL with ISA I32  
-RV32I Base Instruction Set :  
+##This is a single cycle RISC-V Processor in VHDL with ISA I32  
+###RV32I Base Instruction Set :  
     R-Type  
     I-Type  
     S-Type  
@@ -8,7 +8,7 @@ RV32I Base Instruction Set :
     J-Type  
     MISSED: B-Type  
     NOP as if invalid code  
-Specifications :  
+###Specifications :  
     1 core  
     ~1 GHz  
     MISS to BrALU   
@@ -16,7 +16,7 @@ Specifications :
            : does not support out of band access  
            : word is 32bit wide  
            : Access by word  
-Further Versions :  
+###Further Versions :  
     Adding the BrALU and support the B-Type Instructions  
     Piplining the processor with Hazards Solutions  
     SRAM/DRAM as cache and Handling cache Misses  
