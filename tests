@@ -1,0 +1,4 @@
+## testing framework: ModelSim simulation 
+using mem filling function(s)
+we fill the Data/Text MEM  with the filling functions that read the files main/src/simulation/modelsim and running it in modelsim
+there some test programs for test located in main/src/simulation/modelsim 
