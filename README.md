@@ -1,5 +1,7 @@
 # RISC-V-Processor
 ## This is a single cycle RISC-V Processor in VHDL with ISA I32  
+### DeepWiki:  
+https://deepwiki.com/mohamednaji7/RISC-V-Processor  
 ### RV32I Base Instruction Set :  
     R-Type  
     I-Type  
